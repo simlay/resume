@@ -32,46 +32,46 @@
 
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-0.05in}{-0.05in}
-		\vspace*{-8pt}
-		\hrulefill \\
-		\vspace*{-2pt}
-	\end{changemargin}
+    \begin{changemargin}{-0.05in}{-0.05in}
+        \vspace*{-8pt}
+        \hrulefill \\
+        \vspace*{-2pt}
+    \end{changemargin}
 }
 
 % Header
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\scshape{#1}\\
-  		\lineover
-	\end{changemargin}
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \scshape{#1}\\
+        \lineover
+    \end{changemargin}
 }
 
 % Contact Display Format
 \newcommand{\contact}[4]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\begin{center}
-			{\Large \scshape {#1}}\\ \smallskip
-			{#2}\\ \smallskip 
-			{#3}\\ \smallskip
-			{#4}\smallskip
-		\end{center}
-	\end{changemargin}
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \begin{center}
+            {\Large \scshape {#1}}\\ \smallskip
+            {#2}\\ \smallskip
+            {#3}\\ \smallskip
+            {#4}\smallskip
+        \end{center}
+    \end{changemargin}
 }
 
 % Document Margins
 \newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-0.20in}{-0.5in}
-  }	
-	{\end{changemargin}
-}	
+    \vspace*{-16pt}
+    \begin{changemargin}{-0.20in}{-0.5in}
+  }
+    {\end{changemargin}
+}
 
 % School Display Format
 %\newcommand{\school}[4]{
-%	\textbf{#1} \hfill \emph{#2\\}
-%	#3\\ 
-%	#4\\
+%    \textbf{#1} \hfill \emph{#2\\}
+%    #3\\
+%    #4\\
 %}
 
 %% BEGIN DOCUMENT %%
@@ -79,7 +79,7 @@
 \begin{document}
 
 % Contact Information
-\contact{Travis W. Peters}{101 S. $43^{rd}$ St., Bellingham, WA 98229}{traviswp@gmail.com}{360.441.7304}
+\contact{Sebastian Imlay}{sebastian.imlay@gmail.com}{208.290.4936}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -98,20 +98,87 @@
 
 %\begin{body}
 %\vspace{14pt}
-%Professional student double majoring in Math \& Computer Science, working as Vice President for Business \& Operations of university student government, and leading a small technical team in part-time internship. Has particular expertise in problem solving, critical thinking, organization, individual and group goal-setting, facilitating collaboration and communicating in/with small and large groups. 
+%Professional student double majoring in Math \& Computer Science, working as Vice President for Business \& Operations of university student government, and leading a small technical team in part-time internship. Has particular expertise in problem solving, critical thinking, organization, individual and group goal-setting, facilitating collaboration and communicating in/with small and large groups.
 %\end{body}
 
 %\smallskip
 
 % Qualifications Summary
-\header{Qualifications Summary}
+%\header{Qualifications Summary}
+%
+%\vspace{14pt}
+%\begin{body}
+%Motivated student with dual concentration in Mathematics \& Computer Science. Proven leadership capabilities serving as student representative in student
+%government, and managing other student managers in non-profit organization. Strong background and technical skills related to area of study demonstrated by
+%leading a team of interns in mobile application development, developing software extensions for corporate fraud management system, and teaching/tutoring
+%students as a Teaching Assistant for introductory Computer Science courses.
+%
+%\end{body}
 
-\vspace{14pt}
+%\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Experience
+\header{Experience}
+
 \begin{body}
-Motivated student with dual concentration in Mathematics \& Computer Science. Proven leadership capabilities serving as student representative in student
-government, and managing other student managers in non-profit organization. Strong background and technical skills related to area of study demonstrated by
-leading a team of interns in mobile application development, developing software extensions for corporate fraud management system, and teaching/tutoring
-students as a Teaching Assistant for introductory Computer Science courses. 	
+    \vspace{14pt}
+
+    \textbf{Data Scientist/Software Engineer}, \emph{Vehicle Data Science Inc.} \hfill \emph{August 2013 - November 2013}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Design and implementation of Computational Geometry Algorithms for GPS data
+        \item Geospatial analysis of vehicle data.
+        \item Database schema design and implementation.
+        \item Worked with Python, Bash, Git, Numpy, SQLAlchemy, Postgres, PostGIS
+    \end{itemize}
+
+    \textbf{Software Engineer Intern}, \emph{Yelp, San Francisco, CA} \hfill \emph{Summer 2013}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Worked with a team to import and export features to and from the Yelp database.
+        \item Ran analysis on data using Python Streams and MapReduce.
+        \item Received Hackathon “Most Useful Award”.
+        \item Worked with Python, Bash, Make and Git.
+    \end{itemize}
+
+    \textbf{Software Engineer Intern}, \emph{Synapse Product Development, Seattle, WA} \hfill \emph{Winter 2013}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Implemented recognition for accelerometer time series data on the Nike FuelBand
+        \item Algorithms include FFT, Decision Trees and K Nearest Neighbor.
+        \item Embedded C programming on Nike FuelBand.
+        \item Worked with Python, C, Bash, Make and Git.
+    \end{itemize}
+
+    \textbf{Research Assistant}, \emph{NASA JPL, Pasadena, CA} \hfill \emph{Summer 2012}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Researched and applied Machine Learning to estimate tree heights across North America.
+        \item Algorithms include Decision Tree Learning, Random Forests and Linear Regression.
+        \item Built and tested tools to analyze hundreds of gigabytes of atmospheric data.
+        \item Worked with Python, C++, Bash, Make and Git.
+    \end{itemize}
+
+    \textbf{Software Engineer/Research Intern}, \emph{Tamarack Aerospace Group, Sandpoint, ID} \hfill \emph{Summer 2011}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Researched load cycle counting algorithms for fatigue analysis calculations on small aircrafts.
+        \item Responsible for implementing and testing algorithms efficiently and correctly.
+        \item Data processing techniques involved Fast Fourier Transform and Band Pass Filters
+        \item Worked with Fortran, PHP, Apache, Bash, and GNU Make.
+    \end{itemize}
+
+    \textbf {Software Engineer Intern}, \emph{NASA Goddard Space Flight Center} \hfill \emph{January 2010 - August 2010}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Researched Laser Altimetry techniques for Space Flight and Autonomous Robots.
+        \item Worked in a team to develop software for autonomous robot proof of concept in C++ and C\#.
+        \item Implemented an A* like search algorithm for robot path planning to allow robots to autonomously navigate any environment.
+        \item Specialized in Data Processing Techniques for Single Photon Detection Laser Altimeter
+        \item Worked with SVN, Visual Studio, GCC, C, C++, and C\#.
+    \end{itemize}
 
 \end{body}
 
@@ -123,122 +190,23 @@ students as a Teaching Assistant for introductory Computer Science courses.
 \header{Education}
 
 \begin{body}
-	\vspace{14pt}
-	
-	% Dartmouth College
-	\textbf{Ph.D., Computer Science}{} \hfill \emph{September 2013 - June 2018 (expected)}{} \\
-	\emph{Dartmouth College}, Hanover, NH{} \\
-	\medskip
+    \vspace{14pt}
 
-	% Western Washington University
-	\textbf{B.S., Double Major in Mathematics and Computer Science}{} \hfill \emph{September 2008 - December 2012}{} \\
-	\emph{Western Washington University (WWU)}, Bellingham, WA{} \\
-	%\medskip
-	
-	% University of Washington
-	%\textbf{B.S., Mathematics} \hfill \emph{Winter 2009 - Fall 2009} \\
-	%\emph{University of Washington}, Seattle, WA\\	
-	%\medskip
-	
-	% Lower Columbia College
-	%\textbf{Associate in Arts (Running Start)} \hfill \emph{June 2008} \\
-	%\emph{Lower Columbia College (LCC)}, Longview, WA\\
-	%\medskip
-	
-	% Kelso High School
-	%\textbf{High School Diploma} \hfill \emph{June 2008} \\
-	%\emph{Kelso High School (KHS)}, Kelso, WA\\
-\end{body}
+    % Western Washington University
+    \textbf{B.S., Computer Science}{} \hfill \emph{September 2009 - December 2012}{} \\
+    \textbf{Minors: Mathematics and Physics}\\
+    \textbf{Major GPA: 3.7/4.0}\\
+    \emph{Western Washington University}, Bellingham, WA{} \\
+    %\medskip
 
-\smallskip
+    % Seattle Central Community College
+    %\textbf{Associates of Science}{} \hfill \emph{September 2008 - August 2009} \\
+    %\emph{Seattle Central Community College}, Seattle, WA{} \\
+    %\medskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Experience
-\header{Relevant Work Experience}
-
-\begin{body}
-	\vspace{14pt}
-
-	\textbf{DevOps Contractor}, \emph{Attachmate, Bellingham, WA} \hfill \emph{January 2013 - August 2013}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Design and build a VM template management infrastructure using Opscode Chef and VMware's vCloud Director to maintain (patch \& update) a variety of systems (development to be done primarily in Ruby).
-		\item Work with team members to define and build components for the Attachmate support website.
-		\item Define and build reporting automation to improve analytics dashboard.
-		\item Create Ruby, Bash, and Batch scripts to automate routine tasks. 
-		\item Document processes, infrastructure/components, configurations and systems as needed. 
-	\end{itemize}
-
-	\textbf{Software Engineer Intern}, \emph{Attachmate, Bellingham, WA} \hfill \emph{August 2012 - December 2012}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Generalized the solution for the Sentinel Extensions for Luminet solution to support logging to various Security Information \& Event Management (SIEM) systems.
-		\item Designed a customizable XML configuration file, wrote the related StAX parser, and developed various implementations of generic data structures to support the generic logging solution for Luminet. 
-		\item Substantial focus on unit testing \& automated testing methods. 
-		\item Co-authored and Delivered a presentation/demonstration of project results to the Luminet Product team.		
-	\end{itemize}
-	
-	\textbf{Computer Science Teaching Assistant}, \emph{WWU, Bellingham, WA} \hfill \emph{September 2012 - Present}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Proctored two labs for Computer Science 140 (Programming Fundamentals in C++)
-		\item Helped students understand fundamental concepts behind the C++ programming language, elementary data structures, basic building and compilation on UNIX systems, and simple sorting/searing algorithms.  
-		\item Regularly held office hours \& graded laboratory assignments. 
-	\end{itemize}
-	
-	\textbf{iOS Developer \& Intern Team Lead}, \emph{Emergency Reporting, Bellingham, WA} \hfill \emph{January 2012 - June 2012}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Developed requirements document and design for Emergency Reporting mobile application. 
-		\item Led team of four interns to implement compatible mobile application on iOS and Android platforms. 
-		\item Implemented features such as: secure communication across network and encryption/decryption of data (meets Department of Defense Standards), local and cloud database access and storage, and GPS related functionality for way-finding including integration with Google Maps.  
-	\end{itemize}
-
-	\textbf{Vice President for Business \& Operations}, \emph{Associated Students of WWU,} \hfill \emph{June 2011 - June 2012}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Charged with overseeing the internal operations of the Associated Students of Western Washington University (ASWWU) programs, services, and the facilities in which they operate.
-		\item Directly managed six other student managers of departments with 1-20 employees. 
-		\item Facilitated organizational budgeting process, assessment process as well as hiring process. 
-		\item Specifically responsible for development of fiscal year 2012 operating \& non-operating budget (approximately \$3.1 million total). 
-	\end{itemize}
-
-	\textbf {Private Math Tutor}, \emph{Self-employed} \hfill \emph{September 2008 - Present}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Privately tutored more than 10 students in Mathematics while at Western Washington University.
-		\item Demonstrated tutoring proficiency in algebra, geometry, pre-calculus, business calculus, single and multi-variable calculus, linear algebra, differential equations, and probability \& statistics. 
-	\end{itemize}
-	
-	\textbf {Marketing \& Technical Associate}, \emph{Caso Inc., San Antonio TX} \hfill \emph{June 2010 - January 2011}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item Collaborated with the marketing team to implement search engine optimization of company website.
-		\item Advised a team of leaders from various departments to implement a trial of a new organizational management system intended for data storage of products, project information/status \& client records. 
-	\end{itemize}
-
-	\textbf {Teaching Assistant}, \emph{Family House Academy, Kelso, WA} \hfill \emph{Summer 2009}\\
-	\vspace*{-4pt}
-	\begin{itemize} \itemsep -0pt  % reduce space between items
-		\item  Taught and tested students, ranging from 7-15, in Math, Reading, Writing, and Physical Education. 
-		\item Designed lesson plans and evaluation metrics to gauge student progress. 
-	\end{itemize}
-
-\end{body}
-
-\smallskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Publications
-\header{Selected Publications}
-
-\begin{body}
-	\vspace{14pt}
-	Travis Peters, Chip Jackson \& Lucas Bourne. ``\textbf{Computing Along the Big Long River},'' \\
-	\emph{UMAP Journal for Undergraduate Mathematics \& Research 33.3 Fall 2012 Edition - \\ 
-	\hspace{5mm} The 2012 MCM / ICM Contest Edition}\\
+    % Sandpoint High School
+    %\textbf{High School Diploma} \hfill \emph{June 2007} \\
+    %\emph{Sandpoint High School (SHS)}, Sandpoint, ID\\
 \end{body}
 
 \smallskip
@@ -248,45 +216,54 @@ students as a Teaching Assistant for introductory Computer Science courses.
 % Related Courses
 \header{Relevant Courses}
 \begin{body}
-	\vspace{4pt}
-	\begin{multicols}{2}
-		\begin{itemize} \itemsep -0pt
-			%mathematics courses
-			\item [] Single Variable Calculus I, II, \& III
-			\item [] Multivariable Calculus I \& II
-			\item [] Limits \& Infinite Series
-			\item [] Systems of Differential Equations
-			\item [] Linear Algebra I \& II
-			\item [] Introduction to Proofs via Number Theory
-			\item [] Proofs in Elementary Analysis
-			\item [] Introduction to Abstract Algebra
-			\item [] Mathematical Modeling
-			\item [] Probability \& Statistics
-			\item [] Statistical Methods
-			\item [] Introduction to Complex Variables
-			\item [] Historical Perspectives of Mathematics
-			
-			%computer science courses
-			\item [] Programming \& Linear Data Structures
-			\item [] Discrete Structures \& Functional Programming
-			\item [] Data Structures
-			\item [] Analysis of Algorithms I \& II
-			\item [] Computer Organization I \& II
-			\item [] Database Systems
-			\item [] Web Scripting
-			\item [] Software Project Analysis \& Requirements
-			\item [] Software Project Design
-			\item [] Software Implementation
-			\item [] Numerical Computation \& Analysis
-			\item [] Object Oriented Programming in C++
-			\item [] Formal Languages \& Automata
-			\item [] Unix Software Development
-			\item [] Operating Systems
-			\item [] Principles of Concurrent Programming
-			\item [] Computer Networks
-			\item [] Cyber Defense Seminar
-		\end{itemize}
-	\end{multicols}
+    \vspace{4pt}
+    \begin{multicols}{2}
+        \begin{itemize} \itemsep -0pt
+            % Mathematics courses
+            \item [] Single Variable Calculus I, II, \& III
+            \item [] Multivariable Calculus I \& II
+            \item [] Limits \& Infinite Series
+            \item [] Ordinary Differential Equations
+            \item [] Fourier Analysis \& Partial Differential Equations
+            \item [] Linear Algebra I \& II
+            \item [] Mathematical Modeling
+            \item [] Probability \& Statistics
+            \item [] Introduction to Complex Variables
+            \item [] Linear \& Nonlinear Optimization
+
+            % Computer Science courses
+            \item [] Programming \& Linear Data Structures
+            \item [] Discrete Structures \& Functional Programming
+            \item [] Data Structures
+            \item [] Analysis of Algorithms I \& II
+            \item [] Computer Organization I \& II
+            \item [] Database Systems
+            \item [] Software Project Analysis \& Requirements
+            \item [] Software Project Design
+            \item [] Software Implementation
+            \item [] Formal Languages \& Automata
+            \item [] Unix Software Development
+            \item [] Operating Systems
+            \item [] Principles of Concurrent Programming
+            \item [] Computer Networks
+            \item [] Bioinformatics
+            \item [] Compiler Theory and Design
+
+            % Physics courses
+            \item [] Computational Physics
+            \item [] Quantum Mechanics
+            \item [] Classical Mechanics
+            \item [] Modern Physics
+            \item [] Waves and Optics
+            \item [] Electricity and Magnetism
+
+            % Other Sciences
+            \item [] General Chemistry I
+            \item [] Molecular Biology
+            \item [] Engineering Statics
+
+        \end{itemize}
+    \end{multicols}
 \end{body}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -295,81 +272,54 @@ students as a Teaching Assistant for introductory Computer Science courses.
 
 \header{Technical Skills}
 \begin{body}
-	\vspace{14pt}
-	% Programming Languages
-	\emph{\textbf{Programming Languages:}}{} Ruby, Java, C++, Python, Ada, C, Matlab, Objective-C, PHP, Mathematica, HTML, CSS, SQL, Scheme, Prolog, Haskell, KPL, NASM Assembly Language\\
-	\medskip
-	% Source Control
-	\emph{\textbf{Source Control:}}{} Git, Perforce\\
-	\medskip
-	% Operating Systems
-	\emph{\textbf{Operating Systems:}}{} Mac OS X, Linux, UNIX, Windows\\
-	\medskip
-	% Industry Software/Systems
-	\emph{\textbf{Industry Software/Systems:}}{} VMware's vCloud Director, Opscode Chef\\
+    \vspace{14pt}
+    % Programming Languages
+    \emph{\textbf{Programming Languages:}}{} Java, C++, Python, Ada, C, C\#, R, SQL, Scheme, NASM Assembly Language\\
+    \medskip
+    % Source Control
+    \emph{\textbf{Unix Tools:}}{} Git, Bash, Vim, Lex, Yacc/Bison\\
+    \medskip
+    % Operating Systems
+    \emph{\textbf{Operating Systems:}}{} Mac OS X, Linux, UNIX, Linux (Debian, Ubuntu, Gentoo)\\
+    \medskip
 \end{body}
 
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Leadership
-\header{Leadership Activities}
-
-\begin{body}
-	\vspace{14pt}
-	\textbf{Lead Teacher \& RK Coordinator}, Redeemer Kids at Redeemer Church \hfill{} \emph{November 2011 - June 2013}\\
-	\smallskip
-	\textbf{Chair}, AS Management Council \& AS Facilities \& Services Council \hfill {} \emph{June 2011 - June 2012}\\
-	\smallskip
-	\textbf{Vice-Chair}, AS Board of Directors \& AS Budget Committee \hfill {} \emph{June 2011 - June 2012}\\
-	\smallskip
-	\textbf{Member}, Academic Honesty Board \hfill{} \emph{June 2011 - June 2012}\\
-	\smallskip
-	\textbf{Big Brother}, Big Brothers Big Sisters of Whatcom County \hfill{} \emph{September 2010 - September 2011}\\
-\end{body}
-
-\smallskip
-
-\newpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Awards and Honors
 \header{Awards and Honors}
 
 \begin{body}
-	\vspace{14pt}
-	
-	% Dartmouth Fellowship
-	\textbf{Dartmouth Fellowship}, Dartmouth College \hfill{} \emph{2013 - 2014}\\
-	\smallskip
-		
-	% Oscar Edwin Olson Scholarship
-	\textbf{Oscar Edwin Olson Scholarship}, Western Washington University \hfill{} \emph{2012}\\
-	\smallskip
-	
-	% Outstanding Winner/Frank Giordano Award
-	\textbf{Outstanding Winner, Frank Giordano Award}, Mathematical Contest in Modeling \hfill{} \emph{2012}\\
-	\hspace{5mm}\textit{The Mathematical Contest in Modeling challenges students to clarify, analyze, and propose}\\
-	\hspace{5mm}\textit{solutions to open-ended problems. The contest included over 3,600 teams from 17 countries}\\
-	\hspace{5mm}\textit{around the world. Only 10 teams are selected as Outstanding Winners of the contest.}\\
-	\smallskip
-	
-	% Kaiser Borsari Scholarship
-	\textbf{Kaiser Borsari Scholarship}, Western Washington University \hfill{} \emph{2011 - 2012}\\
-	\smallskip
-	
-	% Giusti Scholarship
-	\textbf{Giusti Scholarship}, Western Washington University \hfill{} \emph{2011 - 2012}\\
-	\smallskip
-	
-	% WWU Cross Country
-	\textbf{4-year member of Junior Varsity Cross Country}, Western Washington University \hfill{} \emph{2008 - 2011}\\
-	\smallskip
-	
-	% WWU Track & Field
-	\textbf{4-year member of Varsity Track \& Field}, Western Washington University \hfill{} \emph{2008 - 2012}\\
+    \vspace{14pt}
+
+
+    % Yelp Hackathon
+    \textbf{Most Useful Award}, Yelp Hackathon \hfill{} \emph{2013}\\
+    \smallskip
+
+    % Mathematical Modeling Competition
+    \textbf{Honorable Mention}, Mathematical Modeling Contest \hfill{} \emph{2012}\\
+
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Hobbies
+\header{Hobbies}
+
+\begin{body}
+    \vspace{14pt}
+
+    Programming, Electronics, reading, soccer, unicycling, swimming, skiing, and traveling
+    % Yelp Hackathon
+    %\textbf{Most Useful Award}, Yelp Hackathon
+    %\smallskip
 
 \end{body}
 
