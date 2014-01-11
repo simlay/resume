@@ -1,6 +1,6 @@
 .SUFFIXES: .tex .pdf
 
-SRCS := resume.tex
+SRCS := cv.tex
 
 all: ${SRCS:.tex=.pdf}
 
