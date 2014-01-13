@@ -14,6 +14,8 @@
 \raggedright
 \pagenumbering{arabic}
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\renewcommand*{\familydefault}{\sfdefault}
+
 
 %% BEGIN DEFINITIONS %%
 
@@ -42,7 +44,7 @@
 % Header
 \newcommand{\header}[1]{
     \begin{changemargin}{-0.5in}{-0.5in}
-        \scshape{#1}\\
+        {\large #1}\\
         \lineover
     \end{changemargin}
 }
@@ -51,10 +53,9 @@
 \newcommand{\contact}[4]{
     \begin{changemargin}{-0.5in}{-0.5in}
         \begin{center}
-            {\Large \scshape {#1}}\\ \smallskip
+            {\Large {#1}}\\ \smallskip
             {#2}\\ \smallskip
-            {#3}\\ \smallskip
-            {#4}\smallskip
+            {#3}
         \end{center}
     \end{changemargin}
 }
@@ -123,61 +124,101 @@
 \header{Experience}
 
 \begin{body}
-    \vspace{14pt}
+    \vspace{18pt}
 
-    \textbf{Data Scientist/Software Engineer}, \emph{Vehicle Data Science Inc.} \hfill \emph{August 2013 - November 2013}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Design and implementation of Computational Geometry Algorithms for GPS data
-        \item Geospatial analysis of vehicle data.
+    \textbf{Data Scientist/Software Engineer}
+    \hfill
+    \textbf{Vehicle Data Science Inc.} \\
+    \hfill
+    {\small Fall 2013} \\
+    \vspace*{-14pt}
+    \begin{itemize} % \itemsep -0pt  % reduce space between items
+        \item Designed and implementationed of Computational Geometry Algorithms for GPS data
         \item Database schema design and implementation.
-        \item Worked with Python, Bash, Git, Numpy, SQLAlchemy, Postgres, PostGIS
+        \item Geospatial analysis of vehicle data.
     \end{itemize}
 
-    \textbf{Software Engineer Intern}, \emph{Yelp, San Francisco, CA} \hfill \emph{Summer 2013}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \textbf{Software Engineer Intern}
+    \hfill
+    \textbf{Yelp}\\
+    \hfill
+    {\small Summer 2013}\\
+
+    \vspace*{-14pt}
+    \begin{itemize} % \itemsep -0pt  % reduce space between items
         \item Worked with a team to import and export features to and from the Yelp database.
         \item Ran analysis on data using Python Streams and MapReduce.
         \item Received Hackathon “Most Useful Award”.
-        \item Worked with Python, Bash, Make and Git.
+        %\item Worked with Python, Bash, Make and Git.
     \end{itemize}
 
-    \textbf{Software Engineer Intern}, \emph{Synapse Product Development, Seattle, WA} \hfill \emph{Winter 2013}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \textbf{Software Engineer Intern}
+    \hfill
+    \textbf{Synapse Product Development}\\
+    \hfill
+    {\small Winter 2013}\\
+    \vspace*{-14pt}
+    \begin{itemize} % \itemsep -0pt  % reduce space between items
         \item Implemented recognition for accelerometer time series data on the Nike FuelBand
         \item Algorithms include FFT, Decision Trees and K Nearest Neighbor.
-        \item Embedded C programming on Nike FuelBand.
-        \item Worked with Python, C, Bash, Make and Git.
+        %\item Embedded C programming on Nike FuelBand.
+        \item Co-inventor on pending patent of ``Gesture Recognition''.
+        %\item Worked with Python, C, Bash, Make and Git.
     \end{itemize}
 
-    \textbf{Research Assistant}, \emph{NASA JPL, Pasadena, CA} \hfill \emph{Summer 2012}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \textbf{Research Assistant}
+    \hfill
+    \textbf{NASA JPL}\\
+    \hfill
+    {\small Summer 2012}
+    \vspace*{-14pt}
+    \begin{itemize} % \itemsep -0pt  % reduce space between items
         \item Researched and applied Machine Learning to estimate tree heights across North America.
         \item Algorithms include Decision Tree Learning, Random Forests and Linear Regression.
         \item Built and tested tools to analyze hundreds of gigabytes of atmospheric data.
-        \item Worked with Python, C++, Bash, Make and Git.
+        %\item Worked with Python, C++, Bash, Make and Git.
     \end{itemize}
 
-    \textbf{Software Engineer/Research Intern}, \emph{Tamarack Aerospace Group, Sandpoint, ID} \hfill \emph{Summer 2011}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \textbf{Software Engineer/Research Intern}
+    \hfill
+    \textbf{Tamarack Aerospace Group}\\
+    \hfill
+    {\small Summer 2011}
+
+    \vspace*{-14pt}
+    \begin{itemize} %\itemsep -0pt  % reduce space between items
         \item Researched load cycle counting algorithms for fatigue analysis calculations on small aircrafts.
-        \item Responsible for implementing and testing algorithms efficiently and correctly.
         \item Data processing techniques involved Fast Fourier Transform and Band Pass Filters
-        \item Worked with Fortran, PHP, Apache, Bash, and GNU Make.
+        %\item Responsible for implementing and testing algorithms efficiently and correctly.
+        %\item Worked with Fortran, PHP, Apache, Bash, and GNU Make.
     \end{itemize}
 
-    \textbf {Software Engineer Intern}, \emph{NASA Goddard Space Flight Center} \hfill \emph{January 2010 - August 2010}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \textbf{Software Engineer Intern}
+    \hfill
+    \textbf{NASA Goddard Space Flight Center}\\
+    \hfill
+    {\small January - August 2010}
+
+    \vspace*{-14pt}
+    \begin{itemize} %\itemsep -0pt  % reduce space between items
         \item Researched Laser Altimetry techniques for Space Flight and Autonomous Robots.
-        \item Worked in a team to develop software for autonomous robot proof of concept in C++ and C\#.
-        \item Implemented an A* like search algorithm for robot path planning to allow robots to autonomously navigate any environment.
-        \item Specialized in Data Processing Techniques for Single Photon Detection Laser Altimeter
-        \item Worked with SVN, Visual Studio, GCC, C, C++, and C\#.
+        %\item Worked in a team to develop software for autonomous robot proof of concept in C++ and C\#.
+        %\item Implemented an A* like search algorithm for robot path planning to allow robots to autonomously navigate any environment.
+        %\item Specialized in Data Processing Techniques for Single Photon Detection Laser Altimeter
+        %\item Worked with SVN, Visual Studio, GCC, C, C++, and C\#.
+    \end{itemize}
+
+    \textbf {Game Tester}
+    \hfill
+    \textbf{Microsoft Games Studios}\\
+    \hfill
+    \emph{Summer 2008}\\
+
+    \vspace*{-14pt}
+    \begin{itemize} %\itemsep -0pt  % reduce space between items
+        \item Worked with a team to troubleshoot Xbox 360 games.
+        %\item Wrote clear bug reports.
+        %\item Credited as Reserve Tester for LIPS Video Game.
     \end{itemize}
 
 \end{body}
@@ -197,11 +238,11 @@
     \textbf{Minors: Mathematics and Physics}\\
     \textbf{Major GPA: 3.7/4.0}\\
     \emph{Western Washington University}, Bellingham, WA{} \\
-    %\medskip
+    \medskip
 
     % Seattle Central Community College
-    %\textbf{Associates of Science}{} \hfill \emph{September 2008 - August 2009} \\
-    %\emph{Seattle Central Community College}, Seattle, WA{} \\
+    \textbf{Associate in Science}{} \hfill \emph{September 2008 - August 2009} \\
+    \emph{Seattle Central Community College}, Seattle, WA{} \\
     %\medskip
 
     % Sandpoint High School
@@ -220,32 +261,31 @@
     \begin{multicols}{2}
         \begin{itemize} \itemsep -0pt
             % Mathematics courses
-            \item [] Single Variable Calculus I, II, \& III
-            \item [] Multivariable Calculus I \& II
-            \item [] Limits \& Infinite Series
-            \item [] Ordinary Differential Equations
+            %\item [] Single Variable Calculus I, II, \& III
+            %\item [] Multivariable Calculus I \& II
+            %\item [] Limits \& Infinite Series
+            %\item [] Ordinary Differential Equations
             \item [] Fourier Analysis \& Partial Differential Equations
-            \item [] Linear Algebra I \& II
+            %\item [] Linear Algebra I \& II
             \item [] Mathematical Modeling
-            \item [] Probability \& Statistics
-            \item [] Introduction to Complex Variables
+            %\item [] Probability \& Statistics
+            %\item [] Introduction to Complex Variables
             \item [] Linear \& Nonlinear Optimization
 
             % Computer Science courses
-            \item [] Programming \& Linear Data Structures
-            \item [] Discrete Structures \& Functional Programming
-            \item [] Data Structures
-            \item [] Analysis of Algorithms I \& II
-            \item [] Computer Organization I \& II
-            \item [] Database Systems
-            \item [] Software Project Analysis \& Requirements
-            \item [] Software Project Design
-            \item [] Software Implementation
+            %\item [] Programming \& Linear Data Structures
+            %\item [] Discrete Structures \& Functional Programming
+            \item [] Data Structures \& Algorithms
+            %\item [] Computer Organization I \& II
+            %\item [] Database Systems
+            %\item [] Software Project Analysis \& Requirements
+            %\item [] Software Project Design
+            %\item [] Software Implementation
             \item [] Formal Languages \& Automata
-            \item [] Unix Software Development
+            %\item [] Unix Software Development
             \item [] Operating Systems
-            \item [] Principles of Concurrent Programming
-            \item [] Computer Networks
+            %\item [] Principles of Concurrent Programming
+            %\item [] Computer Networks
             \item [] Bioinformatics
             \item [] Compiler Theory and Design
 
@@ -254,13 +294,13 @@
             \item [] Quantum Mechanics
             \item [] Classical Mechanics
             \item [] Modern Physics
-            \item [] Waves and Optics
-            \item [] Electricity and Magnetism
+            %\item [] Waves and Optics
+            %\item [] Electricity and Magnetism
 
             % Other Sciences
-            \item [] General Chemistry I
-            \item [] Molecular Biology
-            \item [] Engineering Statics
+            %\item [] General Chemistry I
+            %\item [] Molecular Biology
+            %\item [] Engineering Statics
 
         \end{itemize}
     \end{multicols}
@@ -277,15 +317,26 @@
     \emph{\textbf{Programming Languages:}}{} Java, C++, Python, Ada, C, C\#, R, SQL, Scheme, NASM Assembly Language\\
     \medskip
     % Source Control
-    \emph{\textbf{Unix Tools:}}{} Git, Bash, Vim, Lex, Yacc/Bison\\
+    \emph{\textbf{Unix Tools:}}{} Git, Bash, Vim, Lex, Yacc/Bison, GCC, GDB, GNU Make, Visual Studio\\
     \medskip
     % Operating Systems
     \emph{\textbf{Operating Systems:}}{} Mac OS X, Linux, UNIX, Linux (Debian, Ubuntu, Gentoo)\\
-    \medskip
+    %\medskip
 \end{body}
 
 \smallskip
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Patents
+
+\header{Patents}
+\begin{body}
+    \vspace{14pt}
+    ``Gesture Recognition.'' (Co-invented) US Patent Pending 61/863,249. Filed August 7, 2013 by Synapse Product Development LLC
+\end{body}
+
+\smallskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -295,7 +346,6 @@
 \begin{body}
     \vspace{14pt}
 
-
     % Yelp Hackathon
     \textbf{Most Useful Award}, Yelp Hackathon \hfill{} \emph{2013}\\
     \smallskip
@@ -304,9 +354,19 @@
     \textbf{Honorable Mention}, Mathematical Modeling Contest \hfill{} \emph{2012}\\
 
 \end{body}
-
 \smallskip
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Personal Projects
+\header{Personal Projects}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Google Maps Pacmac:} Implementation of Pacman such that the characters can only run along the streets.  Usage of JavaScript, CSS, and HTML 5 Canvas.
+
+\end{body}
+\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -315,12 +375,7 @@
 
 \begin{body}
     \vspace{14pt}
-
     Programming, Electronics, reading, soccer, unicycling, swimming, skiing, and traveling
-    % Yelp Hackathon
-    %\textbf{Most Useful Award}, Yelp Hackathon
-    %\smallskip
-
 \end{body}
 
 \end{document}
