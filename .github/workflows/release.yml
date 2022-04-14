@@ -1,7 +1,6 @@
 name: Release Compiled PDF
 on:
   push:
-  push:
     branches: [ master ]
 
 jobs:
