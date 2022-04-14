@@ -15,10 +15,11 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
-	  - uses: actions/upload-artifact@v2
-		with:
-		  name: cv.pdf
-		  path: cv.pdf
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: cv.pdf
+          path: cv.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v1
