@@ -15,7 +15,7 @@ jobs:
         with:
           root_file: cv.tex
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: cv.pdf
           path: cv.pdf
