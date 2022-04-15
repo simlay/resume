@@ -1,6 +1,9 @@
 name: Release Compiled PDF
 on:
+  workflow_dispatch:
   push:
+    branches: [ master ]
+  pull_request:
     branches: [ master ]
 
 jobs:
@@ -22,6 +25,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
+        if:  startsWith(github.branch, 'master')
         with:
           files: cv.pdf
           name: latest
