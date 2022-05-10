@@ -23,6 +23,14 @@ jobs:
           name: cv.pdf
           path: cv.pdf
 
+      - uses: actions/github-script@v4
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { owner, repo } = context.repo
+            const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
+            await github.repos.deleteRelease({ owner, repo, release_id: id })
+
       - name: Release
         uses: softprops/action-gh-release@v1
         if:  startsWith(github.branch, 'master')
