@@ -20,6 +20,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
+          retention-days: 5
           name: cv.pdf
           path: cv.pdf
 
