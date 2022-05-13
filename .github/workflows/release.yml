@@ -24,7 +24,7 @@ jobs:
           path: cv.pdf
 
       - uses: actions/github-script@v6
-        if:  startsWith(github.branch, 'master')
+        if:  github.branch == 'master'
         continue-on-error: true
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
@@ -35,7 +35,7 @@ jobs:
 
       - name: Release
         uses: softprops/action-gh-release@v1
-        if:  startsWith(github.branch, 'master')
+        if:  github.branch == 'master'
         with:
           files: cv.pdf
           name: latest
