@@ -32,7 +32,29 @@ jobs:
           script: |
             const { owner, repo } = context.repo
             const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
-            await github.repos.deleteRelease({ owner, repo, release_id: id })
+            let release
+            try {
+              release = await github.repos.getReleaseByTag({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                tag: 'latest'
+              })
+            } catch(e) {
+              console.error(e)
+              return
+            }
+
+            await github.repos.deleteRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: release.data.id
+            })
+
+            await github.git.deleteRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'tags/latest'
+            })
 
       - name: Release
         uses: softprops/action-gh-release@v1
