@@ -32,7 +32,7 @@ jobs:
           script: |
             let release
             try {
-              release = await github.repos.getReleaseByTag({
+              release = await github.rest.repos.getReleaseByTag({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 tag: 'latest'
@@ -42,7 +42,7 @@ jobs:
               return
             }
 
-            await github.repos.deleteRelease({
+            await github.rest.repos.deleteRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: release.data.id
