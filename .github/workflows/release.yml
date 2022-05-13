@@ -24,6 +24,8 @@ jobs:
           path: cv.pdf
 
       - uses: actions/github-script@v6
+        if:  startsWith(github.branch, 'master')
+        continue-on-error: true
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
@@ -38,3 +40,4 @@ jobs:
           files: cv.pdf
           name: latest
           tag_name: latest
+          name: latest
