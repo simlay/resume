@@ -8,7 +8,7 @@ all: ${SRCS:.tex=.pdf}
 	latex --shell-escape $<
 	dvips ${<:.tex=.dvi}
 	ps2pdf ${<:.tex=.ps}
-	cp cv.pdf sebasitan-imlay-resume.pdf
+	cp cv.pdf sebastian-imlay-resume.pdf
 	#pandoc -o ${<:.tex=.html} $<
 
 clean:
